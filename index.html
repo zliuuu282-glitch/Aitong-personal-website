@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Du Aitong Portfolio | Design Innovation</title>
+  <meta name="description" content="Du Aitong Design Innovation portfolio, selected work 2023-2026." />
+  <style>
+    :root { --bg:#f5f5f1; --paper:#fff; --ink:#181818; --muted:#666; --line:#deded7; --accent:#244f9e; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
+    .topbar { position:sticky; top:0; z-index:20; backdrop-filter: blur(16px); background:rgba(245,245,241,.86); border-bottom:1px solid var(--line); }
+    .top-inner { max-width:1180px; margin:auto; padding:14px 22px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; flex-direction:column; gap:2px; text-decoration:none; color:var(--ink); }
+    .brand strong { letter-spacing:.08em; font-size:14px; }
+    .brand span { font-size:12px; color:var(--muted); }
+    nav { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; }
+    nav a { color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:8px 11px; font-size:12px; background:rgba(255,255,255,.55); }
+    nav a:hover { border-color:var(--ink); }
+    .hero { max-width:1180px; margin:0 auto; padding:38px 22px 22px; display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:end; }
+    .hero h1 { margin:0; font-size:clamp(36px,7vw,86px); line-height:.94; letter-spacing:-.06em; font-weight:680; }
+    .hero p { margin:16px 0 0; max-width:640px; color:var(--muted); font-size:15px; line-height:1.7; }
+    .actions { margin-top:22px; display:flex; gap:10px; flex-wrap:wrap; }
+    .button { display:inline-flex; align-items:center; justify-content:center; padding:11px 15px; border-radius:999px; border:1px solid var(--ink); background:var(--ink); color:white; text-decoration:none; font-size:13px; }
+    .button.secondary { background:transparent; color:var(--ink); border-color:var(--line); }
+    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+    .stat { background:rgba(255,255,255,.65); border:1px solid var(--line); border-radius:18px; padding:16px; }
+    .stat b { display:block; font-size:22px; letter-spacing:-.04em; }
+    .stat span { color:var(--muted); font-size:12px; }
+    main { max-width:1100px; margin:0 auto; padding:18px 22px 80px; }
+    .page { margin:28px auto; background:var(--paper); border:1px solid var(--line); border-radius:24px; padding:12px; box-shadow:0 18px 50px rgba(0,0,0,.08); }
+    .page-meta { display:flex; justify-content:space-between; align-items:center; padding:5px 8px 12px; color:var(--muted); font-size:12px; letter-spacing:.02em; }
+    .page-meta a { color:var(--muted); text-decoration:none; }
+    .page-meta a:hover { color:var(--ink); }
+    .page img { width:100%; height:auto; display:block; border-radius:14px; cursor:zoom-in; background:#fff; }
+    .footer { border-top:1px solid var(--line); padding:26px 22px 40px; text-align:center; color:var(--muted); font-size:12px; }
+    .lightbox { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.88); z-index:99; padding:24px; }
+    .lightbox.open { display:flex; }
+    .lightbox img { max-width:96vw; max-height:88vh; object-fit:contain; border-radius:10px; background:#fff; }
+    .lightbox button { position:fixed; top:18px; right:18px; border:1px solid rgba(255,255,255,.4); background:rgba(255,255,255,.12); color:#fff; border-radius:999px; padding:10px 14px; cursor:pointer; }
+    .hint { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); color:#fff; font-size:12px; opacity:.72; }
+    @media (max-width:760px) {
+      .top-inner { align-items:flex-start; flex-direction:column; } nav { justify-content:flex-start; }
+      .hero { grid-template-columns:1fr; padding-top:26px; } .stats { grid-template-columns:1fr 1fr 1fr; }
+      main { padding-left:12px; padding-right:12px; } .page { border-radius:16px; padding:8px; margin:18px auto; } .page img { border-radius:10px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="top-inner">
+      <a class="brand" href="#top"><strong>DU AITONG</strong><span>Design Innovation Portfolio</span></a>
+      <nav><a href="#p01">Cover</a><a href="#p02">Profile</a><a href="#p03">Contents</a><a href="#p04">01 Multitasking</a><a href="#p14">02 C(h)oral Expression</a><a href="#p23">03 KangaAlert</a></nav>
+    </div>
+  </header>
+  <section class="hero" id="top">
+    <div>
+      <h1>Portfolio<br/>Selected Work<br/>2023–2026</h1>
+      <p>A browser-ready version of the PDF portfolio, preserving the original layout while making it easy to scroll, view, and open individual pages in a new tab.</p>
+      <div class="actions">
+        <a class="button" href="#p01">View portfolio</a>
+        <a class="button secondary" href="assets/page-01.jpg" target="_blank" rel="noopener">Open cover</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>26</b><span>portfolio pages</span></div>
+      <div class="stat"><b>3</b><span>selected projects</span></div>
+      <div class="stat"><b>Web</b><span>browser view</span></div>
+    </div>
+  </section>
+  <main>
+    <article class="page" id="p01">
+      <div class="page-meta"><span>Cover</span><a href="assets/page-01.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-01.jpg" alt="Portfolio page 1" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 01')" />
+    </article><article class="page" id="p02">
+      <div class="page-meta"><span>Profile</span><a href="assets/page-02.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-02.jpg" alt="Portfolio page 2" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 02')" />
+    </article><article class="page" id="p03">
+      <div class="page-meta"><span>Contents</span><a href="assets/page-03.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-03.jpg" alt="Portfolio page 3" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 03')" />
+    </article><article class="page" id="p04">
+      <div class="page-meta"><span>Page 04</span><a href="assets/page-04.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-04.jpg" alt="Portfolio page 4" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 04')" />
+    </article><article class="page" id="p05">
+      <div class="page-meta"><span>Page 05</span><a href="assets/page-05.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-05.jpg" alt="Portfolio page 5" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 05')" />
+    </article><article class="page" id="p06">
+      <div class="page-meta"><span>Page 06</span><a href="assets/page-06.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-06.jpg" alt="Portfolio page 6" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 06')" />
+    </article><article class="page" id="p07">
+      <div class="page-meta"><span>Page 07</span><a href="assets/page-07.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-07.jpg" alt="Portfolio page 7" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 07')" />
+    </article><article class="page" id="p08">
+      <div class="page-meta"><span>Page 08</span><a href="assets/page-08.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-08.jpg" alt="Portfolio page 8" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 08')" />
+    </article><article class="page" id="p09">
+      <div class="page-meta"><span>Page 09</span><a href="assets/page-09.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-09.jpg" alt="Portfolio page 9" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 09')" />
+    </article><article class="page" id="p10">
+      <div class="page-meta"><span>Page 10</span><a href="assets/page-10.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-10.jpg" alt="Portfolio page 10" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 10')" />
+    </article><article class="page" id="p11">
+      <div class="page-meta"><span>Page 11</span><a href="assets/page-11.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-11.jpg" alt="Portfolio page 11" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 11')" />
+    </article><article class="page" id="p12">
+      <div class="page-meta"><span>Page 12</span><a href="assets/page-12.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-12.jpg" alt="Portfolio page 12" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 12')" />
+    </article><article class="page" id="p13">
+      <div class="page-meta"><span>Page 13</span><a href="assets/page-13.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-13.jpg" alt="Portfolio page 13" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 13')" />
+    </article><article class="page" id="p14">
+      <div class="page-meta"><span>Page 14</span><a href="assets/page-14.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-14.jpg" alt="Portfolio page 14" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 14')" />
+    </article><article class="page" id="p15">
+      <div class="page-meta"><span>Page 15</span><a href="assets/page-15.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-15.jpg" alt="Portfolio page 15" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 15')" />
+    </article><article class="page" id="p16">
+      <div class="page-meta"><span>Page 16</span><a href="assets/page-16.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-16.jpg" alt="Portfolio page 16" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 16')" />
+    </article><article class="page" id="p17">
+      <div class="page-meta"><span>Page 17</span><a href="assets/page-17.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-17.jpg" alt="Portfolio page 17" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 17')" />
+    </article><article class="page" id="p18">
+      <div class="page-meta"><span>Page 18</span><a href="assets/page-18.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-18.jpg" alt="Portfolio page 18" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 18')" />
+    </article><article class="page" id="p19">
+      <div class="page-meta"><span>Page 19</span><a href="assets/page-19.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-19.jpg" alt="Portfolio page 19" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 19')" />
+    </article><article class="page" id="p20">
+      <div class="page-meta"><span>Page 20</span><a href="assets/page-20.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-20.jpg" alt="Portfolio page 20" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 20')" />
+    </article><article class="page" id="p21">
+      <div class="page-meta"><span>Page 21</span><a href="assets/page-21.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-21.jpg" alt="Portfolio page 21" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 21')" />
+    </article><article class="page" id="p22">
+      <div class="page-meta"><span>Page 22</span><a href="assets/page-22.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-22.jpg" alt="Portfolio page 22" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 22')" />
+    </article><article class="page" id="p23">
+      <div class="page-meta"><span>Page 23</span><a href="assets/page-23.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-23.jpg" alt="Portfolio page 23" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 23')" />
+    </article><article class="page" id="p24">
+      <div class="page-meta"><span>Page 24</span><a href="assets/page-24.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-24.jpg" alt="Portfolio page 24" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 24')" />
+    </article><article class="page" id="p25">
+      <div class="page-meta"><span>Page 25</span><a href="assets/page-25.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-25.jpg" alt="Portfolio page 25" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 25')" />
+    </article><article class="page" id="p26">
+      <div class="page-meta"><span>Page 26</span><a href="assets/page-26.jpg" target="_blank" rel="noopener">Open image</a></div>
+      <img src="assets/page-26.jpg" alt="Portfolio page 26" loading="lazy" width="2518" height="1790" onclick="openLightbox(this.src, 'Page 26')" />
+    </article>
+  </main>
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button type="button" onclick="closeLightbox(event)">Close</button>
+    <img id="lightbox-img" alt="Expanded portfolio page" />
+    <div class="hint">Click outside the page or press Esc to close</div>
+  </div>
+  <footer class="footer">© Du Aitong · Portfolio website generated from the original PDF.</footer>
+  <script>
+    const box = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    function openLightbox(src, label) { img.src = src; img.alt = label; box.classList.add('open'); }
+    function closeLightbox(e) { if (!e || e.target.id === 'lightbox' || e.target.tagName === 'BUTTON') box.classList.remove('open'); }
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') box.classList.remove('open'); });
+  </script>
+</body>
+</html>
